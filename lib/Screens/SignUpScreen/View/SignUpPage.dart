@@ -72,6 +72,8 @@ class _SignUpPageState extends State<SignUpPage> {
                     padding: EdgeInsets.only(left: Get.width/30,right: Get.width/30,top: Get.width/30),
                     child: TextFormField(
                       controller: signUpController.txtSignUpEmail,
+                      keyboardType: TextInputType.emailAddress,
+                      textInputAction: TextInputAction.next,
                       cursorColor: Colors.purpleAccent,
                       decoration: InputDecoration(
                         border: OutlineInputBorder(
@@ -115,6 +117,8 @@ class _SignUpPageState extends State<SignUpPage> {
                     padding: EdgeInsets.only(left: Get.width/30,right: Get.width/30,top: Get.width/30),
                     child: TextFormField(
                       controller: signUpController.txtSignUpPass,
+                      keyboardType: TextInputType.text,
+                      textInputAction: TextInputAction.next,
                       cursorColor: Colors.purpleAccent,
                       decoration: InputDecoration(
                           border: OutlineInputBorder(
@@ -157,6 +161,8 @@ class _SignUpPageState extends State<SignUpPage> {
                     padding: EdgeInsets.only(left: Get.width/30,right: Get.width/30,top: Get.width/30),
                     child: TextFormField(
                       controller: signUpController.txtSignUpName,
+                      keyboardType: TextInputType.name,
+                      textInputAction: TextInputAction.next,
                       cursorColor: Colors.purpleAccent,
                       decoration: InputDecoration(
                           border: OutlineInputBorder(
@@ -195,6 +201,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     padding: EdgeInsets.only(left: Get.width/30,right: Get.width/30,top: Get.width/30),
                     child: TextFormField(
                       controller: signUpController.txtSignUpPhone,
+                      keyboardType: TextInputType.phone,
                       cursorColor: Colors.purpleAccent,
                       decoration: InputDecoration(
                           border: OutlineInputBorder(

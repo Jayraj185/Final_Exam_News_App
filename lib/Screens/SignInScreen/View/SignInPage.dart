@@ -72,6 +72,8 @@ class _SignInPageState extends State<SignInPage> {
                     padding: EdgeInsets.only(left: Get.width/30,right: Get.width/30,top: Get.width/30),
                     child: TextFormField(
                       controller: signInController.txtSignInEmail,
+                      keyboardType: TextInputType.emailAddress,
+                      textInputAction: TextInputAction.next,
                       cursorColor: Colors.purpleAccent,
                       decoration: InputDecoration(
                           border: OutlineInputBorder(
@@ -115,6 +117,7 @@ class _SignInPageState extends State<SignInPage> {
                     padding: EdgeInsets.only(left: Get.width/30,right: Get.width/30,top: Get.width/30),
                     child: TextFormField(
                       controller: signInController.txtSignInPass,
+                      keyboardType: TextInputType.text,
                       cursorColor: Colors.purpleAccent,
                       decoration: InputDecoration(
                           border: OutlineInputBorder(
